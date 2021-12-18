@@ -159,11 +159,14 @@ color: black;
 
 
 .typing-demo {
-    width: 23ch;
-    animation: typing 2s steps(23), blink .8s step-end infinite alternate;
+    width: 24ch;
+    animation: typing 3s steps(24), blink .8s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
+    font-family: sofia-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
     font-size: 6rem;
   }
   
