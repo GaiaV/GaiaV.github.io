@@ -20,7 +20,7 @@
 
 .html  {
 font-family: sofia-pro, sans-serif;
-font-weight: 200;
+font-weight: 500;
 font-style: normal;
 }
 
@@ -43,6 +43,9 @@ h3  {
 h4  {
     font-size:1.7rem;
     line-height: 1.2;
+    font-family: sofia-pro, sans-serif;
+font-weight: 300;
+font-style: normal;
 }
 
 
@@ -54,7 +57,7 @@ h5  {
 
 p {
     font-family: sofia-pro, sans-serif;
-font-weight: 200;
+font-weight: 500;
 font-style: normal;
     font-size: 6rem;
 }
@@ -150,13 +153,16 @@ color: black;
       .menu a {
         position: relative;
         font-size: 1rem;
-        padding: .5rem;
+        padding: 0.02rem;
       }
 
       
 
 /* ****************************** End Menu *************************************** */
 
+.gif {
+    max-width: 100px;
+}
 
 .typing-demo {
     width: 22ch;
@@ -180,4 +186,5 @@ font-style: normal;
     50% {
       border-color: transparent
     }
-  }
+}
+
