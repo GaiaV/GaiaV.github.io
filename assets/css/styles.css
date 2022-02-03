@@ -198,6 +198,26 @@ a:hover {
     font-size: 6rem;
 }
 
+#container {
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: sofia-pro, sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
 @keyframes typing {
     from {
         width: 0;
