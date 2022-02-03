@@ -30,6 +30,7 @@ h1  {
 }
 
 h2  {
+    font-family: sofia-pro, sans-serif;
     font-size: 2.986rem;
     line-height: 1.1;
 }
@@ -108,13 +109,15 @@ color: #185abc;
 
 .menu {
     display: flex;
-    
+    flex-direction: row;
+    align-items: right;
     }
     
-    .menu > li a {
-    display: block;
-    margin: 40px 40px;
-   justify-items: flex-end;
+    .menu_items {
+    margin: 32px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
     }
 
      
@@ -129,6 +132,11 @@ color: black;
     .logo img {
         max-width: 60px;
         margin-top: -.8rem;
+        margin-left: 30px;
+      }
+
+      .logo img:hover {
+        transform: scale(1.1);
       }
 
 
@@ -159,6 +167,18 @@ color: black;
         padding: 0.02rem;
       }
 
+    
+    .icon_social {
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        gap: 1px;
+        max-width: 40px;
+    }
+
+    .icon_social:hover{
+        transform:scale(1.1);       
+    }
       
 
 /* ****************************** End Menu *************************************** */
