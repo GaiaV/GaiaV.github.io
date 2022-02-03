@@ -38,24 +38,24 @@
 
 <body class="body">
 
-    <header class="header">
+    <header class="header wrapper">
+        <a class="logo" href="https://artemisiagv.netlify.app/"> <img src="/assets/img/AGV Logo.png" alt="">
+        </a>
         <nav class="nav">
             <ul class="menu">
-                <li><a class="logo" href="https://artemisiagv.netlify.app/"> <img src="/assets/img/AGV Logo.png" alt="">
-                    </a>
-                </li>
                 <li class="menu_items"><a href="#selected-works">SELECTED WORKS</a></li>
                 <li class="menu_items"><a href="#art-wall">ART WALL</a></li>
                 <li class="menu_items"><a href="/about/">ABOUT</a></li>
+            </ul>
+            <ul class="social">
                 <li><a href="mailto:gaiavergari@gmail.com"> <img class="icon_social"
                             src="/assets/img/gaiavergari@gmail.com.png" alt="mail"></a></li>
                 <li><a href="https://www.linkedin.com/in/gaia-vergari-3612251ba/"> <img class="icon_social"
                             src="/assets/img/linkedin_gaiavergari.png" alt="linkedin"></a></li>
                 <li><a href="https://www.instagram.com/artemisia_gv/"> <img class="icon_social"
-                            src="/assets/img/instagram_artemisiagv.png" alt="instagram"></a></li>
+                            src="/assets/img/instagram_artemisiagv.png" alt="instagram"></a>
+                </li>
             </ul>
-
-
 
         </nav>
 
@@ -72,13 +72,32 @@
                 </div>
 
                 </p>
+                <div id="container">
+                    <span id="text1"></span>
+                    <span id="text2"></span>
+                </div>
+
+                <!-- The SVG filter used to create the merging effect -->
+                <svg id="filters">
+                    <defs>
+                        <filter id="threshold">
+                            <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    									0 1 0 0 0
+                    									0 0 1 0 0
+                    									0 0 0 255 -140" />
+                        </filter>
+                    </defs>
+                </svg>
             </div>
         </section>
         <br>
         <br>
         <section class="homepage wrapper wrapper--max">
-            <h4>I'm passionate about finding <i>striking solutions to complex problems</i> by carefully crafting new
-                ideas, concepts and digital experiences - always with a <i>human and environmental centered
+            <h4>I'm passionate about finding <i>striking solutions to complex problems</i> by
+                carefully crafting new
+                ideas, concepts and digital experiences - always with a <i>human and
+                    environmental centered
                     perspective</i> in mind.
             </h4>
         </section>
@@ -123,7 +142,7 @@
 
 
 
-
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>
