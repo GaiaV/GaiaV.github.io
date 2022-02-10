@@ -25,7 +25,7 @@
 }
 
 h1 {
-    font-size: 3.583rem;
+    font-size: 6rem;
     line-height: 1;
 }
 
@@ -114,7 +114,8 @@ a:hover {
 }
 
 .menu_items {
-    margin: 32px 40px;
+    margin: 40px;
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     align-items: right;
@@ -131,7 +132,6 @@ a:hover {
 .logo img {
     max-width: 60px;
     margin-top: -0.8rem;
-    margin-left: 30px;
 }
 
 .logo img:hover {
@@ -180,11 +180,30 @@ a:hover {
     transform: scale(1.1);
 }
 
+
+
+.home-hello {
+    padding-top: 150px;
+}
+
+
+
+
+.title-portfolio {
+    width: 100%;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-color: #ED5565;
+}
+
+.text-title-portfolio {
+   padding-bottom: 15px;
+   padding-top: 10px;
+}
+
+
 /* ****************************** End Menu *************************************** */
 
-.gif {
-    max-width: 100px;
-}
 
 .typing-demo {
     width: 22ch;
@@ -198,10 +217,19 @@ a:hover {
     font-size: 6rem;
 }
 
+
+
+
 #container {
     /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-    filter: url(#threshold) blur(0.6px);
+    filter: url(#threshold);
 }
+
+.morph-style{
+height: 100px;
+}
+
+
 
 /* Your average text styling */
 #text1,
@@ -211,12 +239,15 @@ a:hover {
     display: inline-block;
 
     font-family: sofia-pro, sans-serif;
-    font-size: 80pt;
+    font-size: 6rem;
+    margin-left: 30px;
 
-    text-align: center;
+  
 
     user-select: none;
 }
+
+
 
 @keyframes typing {
     from {
@@ -229,3 +260,238 @@ a:hover {
         border-color: transparent;
     }
 }
+
+
+
+
+
+/*********         FLOATING TEXT                     ********/
+
+.you-me {
+    display: flex;
+    justify-content:space-between;
+  }
+
+@import url("https://use.typekit.net/tuf5hwc.css");
+html {
+  font-family: "Sofia Pro", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Sofia Pro", sans-serif;
+  }
+}
+
+body .contact-float{
+    margin: 0;
+    color: #000000;
+    font-weight: 600;
+    font-size: 60px;
+    overflow: hidden;
+    padding-bottom: 400px;
+    padding-top: 100px;
+  }
+  
+.contact-float {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  }
+  
+  .tilt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: tilting 10s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  }
+  
+  .contact-float span {
+    transition: font-weight 0.2s ease-in-out;
+    animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+  }
+  
+  .contact-float span:nth-child(1) {
+    animation-delay: 1s;
+  }
+  .contact-float span:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .contact-float span:nth-child(3) {
+    animation-delay: 3s;
+  }
+  .contact-float span:nth-child(4) {
+    animation-delay: 4s;
+  }
+  .contact-float span:nth-child(5) {
+    animation-delay: 5s;
+  }
+  .contact-float span:nth-child(6) {
+    animation-delay: 6s;
+  }
+  .contact-float span:nth-child(7) {
+    animation-delay: 7s;
+  }
+  
+  .contact-float span:hover {
+    font-weight: 100;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 5vh);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes floating-secondary {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 1vh);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes tilting {
+    0% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(1deg);
+    }
+  }
+
+
+
+
+/********** BUBBLES FOOTER ********/
+
+
+
+  body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "main" "footer";
+    overflow-x: hidden;
+    background: #F5F7FA;
+    min-height: 100vh;
+  }
+
+  .content-footer-text {
+    color: #ffffff;
+  }
+
+  body .footer {
+    z-index: 1;
+    --footer-background:#ED5565;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 12rem;
+  }
+  body .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  body .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  body .footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 2rem;
+    padding: 2rem;
+    background: var(--footer-background);
+  }
+  body .footer .content a, body .footer .content p {
+    color: #F5F7FA;
+    text-decoration: none;
+  }
+  body .footer .content b {
+    color: white;
+  }
+  body .footer .content p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  body .footer .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .footer .content > div > div {
+    margin: 0.01rem 0;
+  }
+  body .footer .content > div > div > * {
+    margin-right: 0.5rem;
+  }
+  body .footer .content > div .image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
