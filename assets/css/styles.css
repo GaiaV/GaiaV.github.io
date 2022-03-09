@@ -26,12 +26,13 @@ html {
 }
 
 h1 {
+    font-family: "sofia-pro", sans-serif;
     font-size: 6rem;
     line-height: 1;
 }
 
-h1-italic {
-    font-family: sofia-pro, sans-serif;
+h1 i {
+    font-family: "Playfair Display", serif;
     font-weight: 500;
     font-style: normal;
     font-size: 6rem;
@@ -39,12 +40,13 @@ h1-italic {
 
 
 h2 {
-    font-family: sofia-pro, sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: 2.986rem;
     line-height: 1.1;
 }
 
 h3 {
+    font-family: "sofia-pro", sans-serif;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 500;
@@ -59,6 +61,7 @@ h4 {
 }
 
 h5 {
+    font-family: "sofia-pro", sans-serif;
     font-size: 1.2rem;
     line-height: 1.1;
     font-weight: 500;
@@ -81,6 +84,7 @@ p {
 
 b,
 strong {
+    font-family: sofia-pro, sans-serif;
     font-weight: 600;
 }
 
@@ -271,8 +275,8 @@ z-index: -9;
 position: absolute;
 width: 582px;
 height: 577px;
-left: 1128px;
-top: -198px;
+left: 68%;
+top: -4%;
 }
 
 .asterisk-button {
@@ -391,6 +395,7 @@ margin-right: 12px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 1em;
     gap: 1rem;
+ 
   }
 
   .heart-gif {
