@@ -276,7 +276,7 @@ position: absolute;
 width: 582px;
 height: 577px;
 margin-top: -39vh;
-margin-left: 69vw;
+margin-left: 75vw;
 }
 
 .asterisk-button {
@@ -796,3 +796,27 @@ body .contact-float{
       bottom: var(--distance, 10rem);
     }
   }
+
+
+
+
+/********** BACK TO TOP ********/
+
+#back_to_top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;}
+    
+@media (max-width: 76.7rem) {
+    #back_to_top {
+        display: none !important;} 
+    }
+        
+        
+@media (min-width: 76.8rem) {
+    #back_to_top {display: none;} 
+}
+
