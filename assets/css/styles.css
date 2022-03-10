@@ -798,6 +798,43 @@ body .contact-float{
   }
 
 
+/**********    ERASMUS+IO      *********/    
+
+
+.project-text {
+    margin: 5% 20%;
+}
+
+.erasmus-project-img {
+    padding: 60px 30px;
+}
+
+.erasmus-project-img img{
+   border-radius: 20px;
+}
+
+.erasmus-video {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 30px;
+    width: 100%;
+ }
+
+
+
+/*
+#description-bar-project{
+} 
+
+
+
+
+{
+} 
+
+*/
+
+.progress { position: fixed; top: 0; left: 0; height: 5px; background-color: var(--primary-500); transition: all linear 0.1s; min-width: 1%; }
 
 
 /********** BACK TO TOP ********/
@@ -807,16 +844,16 @@ body .contact-float{
     cursor: pointer;
     bottom: 15px;
     right: 15px;
-    height: 50px;
-    width: 50px;}
-    
+    height: 40px;
+    width: 40px;}
+   
 @media (max-width: 76.7rem) {
-    #back_to_top {
-        display: none !important;} 
-    }
+   
         
         
 @media (min-width: 76.8rem) {
-    #back_to_top {display: none;} 
+   
+
 }
 
+}
