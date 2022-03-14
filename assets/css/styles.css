@@ -199,6 +199,7 @@ a:hover {
 
 .header {
     justify-content: space-between;
+    max-height: 100px;
 }
 
 .menu_items {
@@ -227,7 +228,7 @@ a:hover {
 }
 
 .logo img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .menu_items a::before {
@@ -263,11 +264,11 @@ a:hover {
     align-items: right;
     gap: 1px;
     max-width: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .icon_social:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .gif-home {
@@ -344,6 +345,169 @@ margin-right: 12px;
     margin-top: .8rem;
 }
 
+.circles {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: .8rem;
+    transition: 0.2s ease;
+}
+
+.c1 {
+    background: #EC1522;
+}
+
+.c1:hover {
+    background-image: url("/assets/img/ink-sketch-lion.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.07);
+}
+
+
+.c2 {
+    background: #E5C1DA;
+}
+
+.c2:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c3 {
+    background: #748CCC;;
+}
+
+.c3:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c4 {
+    background: #FFA99C;
+}
+
+.c4:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c5 {
+    background: #DBA510;
+}
+
+.c5:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c6 {
+    background: #F55B0E;
+}
+
+.c6:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c7 {
+    background: #6D1242;
+}
+
+.c7:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c8 {
+    background: #FAA500;
+}
+
+.c8:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c9 {
+    background: #00AE4F;
+}
+
+.c9:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c10 {
+    background: #202054;
+}
+
+.c10:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c11 {
+    background: #82DECA;
+}
+
+.c11:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c12 {
+    background: #C8E900;
+}
+
+.c12:hover {
+    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c1:hover h5, .c2:hover h5, .c3:hover h5, .c4:hover h5, .c5:hover h5, .c6:hover h5, .c7:hover h5, .c8:hover h5, .c9:hover h5, .c10:hover h5, .c11:hover h5, .c12:hover h5 {
+    display: none;
+}
+
+.c1:hover, .c2:hover, .c3:hover, .c4:hover, .c5:hover, .c6:hover, .c7:hover, .c8:hover, .c9:hover, .c10:hover, .c11:hover, .c12:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.07);
+}
+
+/*
+<div class="container"></div>
+.container{
+    background-image: url(/assets/img/project-background.png);
+    background-color: #f555;   /* First Image URL 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+    transition: 0.5s ease;
+}
+.container:hover{
+    background-image: url(/assets/img/searchonact.png);  /* Second Image URL
+}
+
+ */
+
+
 .circle-text {
     position: relative;
     text-align: center;
@@ -401,6 +565,11 @@ margin-right: 12px;
  padding: 0 40px;
   }
 
+  .photo-description  {
+    display: flex; justify-content: space-between; padding-top: 5px; align-items: flex-end;
+  }
+
+
   .heart-gif {
     height: 60px; 
     margin-top: 40px;
@@ -443,7 +612,6 @@ margin-right: 12px;
     z-index: 1;
     margin-top: -36rem;
     margin-left: 13rem;
-    transition: transform .5s ease; 
   }
 
 
@@ -452,7 +620,6 @@ margin-right: 12px;
     z-index: 1;
     margin-top: -26rem;
     margin-left: 6rem;
-    transition: transform .5s ease; 
   }
 
   .project-img-3 {  
@@ -460,7 +627,6 @@ margin-right: 12px;
     z-index: 1;
     margin-top: -26rem;
     margin-left: 4rem;
-    transition: transform .5s ease; 
   }
 
   .project-img-4 {  
@@ -468,12 +634,15 @@ margin-right: 12px;
     z-index: 1;
     margin-top: -25rem;
     margin-left: 5rem;
-    transition: transform .5s ease; 
   }
 
   .project-img-1:hover, .project-img-2:hover, .project-img-3:hover, .project-img-4:hover {
     transform: scale(1.05);
 }
+
+.transition {  
+    transition: transform .5s ease; 
+  }
 
 
   .project-list li {
@@ -499,6 +668,23 @@ margin-right: 12px;
 .project-visual-2 {
         margin-left: -7rem;
         }
+
+
+
+.wip {
+    display: flex; 
+    flex-direction: column;     
+    align-items: center;  
+    text-align: center;
+            }
+
+            
+.wip img{
+    padding-top: 4rem;
+    height: 26rem;
+    }
+
+
 
 
 
@@ -571,6 +757,11 @@ height: 3rem;
     display: flex;
     justify-content:space-between;
   }
+
+.contacts-you-me {
+    padding-bottom: 150px;
+  }
+
 
 @import url("https://use.typekit.net/tuf5hwc.css");
 html {
@@ -813,18 +1004,20 @@ body .contact-float{
    border-radius: 20px;
 }
 
-.erasmus-video {
+.erasmus-2 {
     display: flex;
     flex-direction: row;
     padding: 60px 30px;
     width: 100%;
+    justify-content: center;
  }
 
-
+.description-bar-project{
+    padding: 1rem 3rem;
+} 
 
 /*
-#description-bar-project{
-} 
+
 
 
 
