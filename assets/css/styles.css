@@ -227,6 +227,11 @@ a:hover {
     margin-top: -0.8rem;
 }
 
+
+.logo-mobile {
+    display: none;
+}
+
 .logo img:hover {
     transform: scale(1.2);
 }
@@ -686,6 +691,43 @@ margin-right: 12px;
 
 
 
+   /**********    ERASMUS+IO      *********/    
+
+
+.project-text {
+    margin: 5% 20%;
+}
+
+.erasmus-project-img {
+    padding: 60px 30px;
+}
+
+.erasmus-project-img img{
+   border-radius: 20px;
+}
+
+.erasmus-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 30px;
+    width: 100%;
+    justify-content: center;
+ }
+
+.description-bar-project{
+    padding: 1rem 3rem;
+} 
+
+/*
+
+
+
+
+
+{
+} 
+ 
+
 
 
 /* ****************************** TYPING TEXT ***************************************
@@ -989,43 +1031,6 @@ body .contact-float{
   }
 
 
-/**********    ERASMUS+IO      *********/    
-
-
-.project-text {
-    margin: 5% 20%;
-}
-
-.erasmus-project-img {
-    padding: 60px 30px;
-}
-
-.erasmus-project-img img{
-   border-radius: 20px;
-}
-
-.erasmus-2 {
-    display: flex;
-    flex-direction: row;
-    padding: 60px 30px;
-    width: 100%;
-    justify-content: center;
- }
-
-.description-bar-project{
-    padding: 1rem 3rem;
-} 
-
-/*
-
-
-
-
-
-{
-} 
-
-*/
 
 .progress { position: fixed; top: 0; left: 0; height: 5px; background-color: var(--primary-500); transition: all linear 0.1s; min-width: 1%; }
 
@@ -1048,5 +1053,154 @@ body .contact-float{
    
 
 }
+
+
+
+
+/*************** RESPONSIVE MENU *********************/
+
+  @media screen and (max-width: 1040px) {
+
+    .nav, .header, .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logo-mobile img {
+        width: 100px;
+    }
+
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background: #1f2227;
+      opacity: 0;
+      transition: all 0.2s ease;
+      display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    .menu-items {
+      position: absolute;
+      top: 60%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+.social ul {
+        position: absolute;
+        top: 10%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+      }
+    .nav-container ul li {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .social {
+        width: 50%;
+        margin-right: 45px;
+        padding-top: 35px;
+      }
+
+      .asterisk-button {
+        height: 3rem;
+        top: 3px;
+        display: none;
+      }
+    .nav-container ul li:nth-child(1) a {
+      transition-delay: 0.2s;
+    }
+    .nav-container ul li:nth-child(2) a {
+      transition-delay: 0.3s;
+    }
+    .nav-container ul li:nth-child(3) a {
+      transition-delay: 0.4s;
+    }
+    .nav-container ul li:nth-child(4) a {
+      transition-delay: 0.5s;
+    }
+    .nav-container ul li:not(:first-child) {
+      margin-left: 0;
+    }
+    .nav-container ul li a {
+      padding: 10px 25px;
+      opacity: 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+      transform: translateY(-20px);
+      transition: all 0.2s ease;
+    }
+    .nav-open {
+      position: fixed;
+      right: 20px;
+      top: 10px;
+      display: block;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      z-index: 9999;
+      border-radius: 50%;
+    }
+    .nav-open i {
+      display: block;
+      width: 30px;
+      height: 2.5px;
+      background: #1f2227;
+      border-radius: 2px;
+      margin-left: 14px;
+    }
+    .nav-open i:nth-child(1) {
+      margin-top: 16px;
+    }
+    .nav-open i:nth-child(2) {
+      margin-top: 4px;
+      opacity: 1;
+    }
+    .nav-open i:nth-child(3) {
+      margin-top: 4px;
+    }
+  }
+  #nav:checked + .nav-open {
+    transform: rotate(45deg);
+  }
+  #nav:checked + .nav-open i {
+    background: #fff;
+    transition: transform 0.2s ease;
+  }
+  #nav:checked + .nav-open i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+  }
+  #nav:checked + .nav-open i:nth-child(2) {
+    opacity: 0;
+  }
+  #nav:checked + .nav-open i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+  }
+  #nav:checked ~ .nav-container {
+    z-index: 9990;
+    opacity: 1;
+  }
+  #nav:checked ~ .nav-container ul li a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hidden {
+    display: none;
+  }
+  
 
 }
