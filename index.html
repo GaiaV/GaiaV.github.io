@@ -46,11 +46,7 @@
             <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
             <div class="nav-container">
                 <ul class="menu">
-                    <li class="logo-mobile"><a class="" href="/"> <img c lass="transition"
-                                src="/assets/img/AGV Logo.png" alt="">
-                    </li>
-                    <li class="menu_items"><span><img class="asterisk-button" src="./assets/img/asterisk-gif-5.gif"
-                                alt=""></span>
+                    <li class="menu_items"><img class="asterisk-button" src="./assets/img/asterisk-gif-5.gif" alt="">
                         <span><a href="/#selected-works">SELECTED WORKS</a></span>
                     </li>
                     <li class="menu_items"><img class="asterisk-button" src="./assets/img/asterisk-gif-5.gif" alt="">
@@ -92,6 +88,34 @@
                     <p style="font-family: sofia-pro;">
                     <h1><i>Hello,</i> <br>
                         <i>I'm </i>Gaia Artemisia<br>
+                    </h1>
+                    </p>
+                    <div id="container">
+                        <p>
+                        <h1><i>and I'm</i> <span id="text1"></span>
+                            <span id="text2"></span>
+                        </h1>
+                        </p>
+                    </div>
+
+                    <!-- The SVG filter used to create the merging effect -->
+                    <svg id="filters" class="morph-style">
+                        <defs>
+                            <filter id="threshold">
+                                <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    									0 1 0 0 0
+                    									0 0 1 0 0
+                    									0 0 0 255 -140" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="home-hello-mobile">
+                    <p style="font-family: sofia-pro;">
+                    <h1><i>Hello,</i> <br>
+                        <i>I'm </i>Gaia<br>Artemisia<br>
                     </h1>
                     </p>
                     <div id="container">
