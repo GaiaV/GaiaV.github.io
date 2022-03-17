@@ -75,6 +75,13 @@ h6 {
     color: var(--primary-500);
 }
 
+h7 {
+    font-family: "sofia-pro", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
 p {
     font-family: "sofia-pro", sans-serif;
     font-weight: 300;
@@ -1238,7 +1245,7 @@ h1 i {
 
 h2 {
     font-family: 'sofia-pro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.1;
 }
 
@@ -1259,7 +1266,7 @@ h4 {
 
 h5 {
     font-family: "sofia-pro", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     line-height: 1.1;
     font-weight: 500;
 }
@@ -1270,6 +1277,13 @@ h6 {
     line-height: 1.1;
     font-weight: 500;
     color: var(--primary-500);
+}
+
+h7 {
+    font-family: "sofia-pro", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.1;
+    font-weight: 500;
 }
 
 p {
@@ -1334,14 +1348,14 @@ display: grid;
 
 
 .circle-text {
-padding-top: 70px;
+padding-top: 60px;
 }
 
 .circle-text-2 {
     position: relative;
     text-align: center;
     color: #ffffff;
-    padding-top: 75px;
+    padding-top: 65px;
 }
 
 .project {
