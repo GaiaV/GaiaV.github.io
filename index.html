@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/tuf5hwc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tuf5hwc.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png" />
@@ -85,19 +85,18 @@
 
             <section class="homepage wrapper wrapper--max">
                 <div class="home-hello">
-                    <p style="font-family: sofia-pro;">
                     <h1><i>Hello,</i> <br>
                         <i>I'm </i>Gaia Artemisia<br>
                     </h1>
-                    </p>
-                    <div id="container">
-                        <p>
+
+                    <div class="im-home" id="container">
+
                         <h1><i>and I'm</i>
                             <div class="text-container"><span id="text1"></span>
                                 <span id="text2"></span>
                             </div>
                         </h1>
-                        </p>
+
                     </div>
 
                     <!-- The SVG filter used to create the merging effect -->
@@ -115,6 +114,9 @@
                 </div>
 
 
+                <img class="gif-home-mobile"
+                    src="https://media1.giphy.com/media/ei8rRtgnI4XsW9P0BX/giphy.gif?cid=790b7611eaad38516a8781a3f01452735a9f49d40517aef0&rid=giphy.gif&ct=g"
+                    alt="">
 
                 <div class="home-description">
                     <h4>I'm passionate about finding <i>striking solutions to complex problems</i> by
@@ -338,7 +340,7 @@
 
             <section class="photo-grid linea-1">
                 <div>
-                    <div class="photo-pic" style="background-image: url(./assets/img/pantone-paint-van-gogh.jpg);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/12-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>Almond blossoms</h7>
@@ -346,16 +348,15 @@
                     </div>
                 </div>
                 <div>
-                    <div class="photo-pic"
-                        style="background-image: url(./assets/img/pantone-paint-le-petit-prince.JPG);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/28-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
-                        <h7>Le Petit Prince</h7>
+                        <h7>#</h7>
                         <h6 style="font-size: 1.2rem;">2016</h6>
                     </div>
                 </div>
                 <div>
-                    <div class="photo-pic" style="background-image: url(./assets/img/ink-sketch-lion.JPG);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/17-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>#inktober</h7>
@@ -375,6 +376,7 @@
 
 
             <section class="photo-grid linea-2">
+
                 <div>
                     <div class="photo-pic" style="background-image: url(./assets/img/pantone-paint-van-gogh.jpg);">
                     </div>
@@ -415,7 +417,7 @@
 
             <section class="photo-grid linea-3">
                 <div>
-                    <div class="photo-pic" style="background-image: url(./assets/img/pantone-paint-van-gogh.jpg);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/26-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>Almond blossoms</h7>
@@ -423,8 +425,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="photo-pic"
-                        style="background-image: url(./assets/img/pantone-paint-le-petit-prince.JPG);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/5-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>Le Petit Prince</h7>
@@ -432,7 +433,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="photo-pic" style="background-image: url(./assets/img/ink-sketch-lion.JPG);">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/16-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>#inktober</h7>
@@ -440,14 +441,15 @@
                     </div>
                 </div>
                 <div>
-                    <div class="photo-pic"
-                        style="background-image: url(./assets/img/sketch-london-big-ben.png); background-size:155% ;">
+                    <div class="photo-pic" style="background-image: url(/assets/img/art-wall/4-artwall-artwall.jpg);">
                     </div>
                     <div class="photo-description">
                         <h7>Up on the Big Ben</h7>
                         <h6 style="font-size: 1.2rem;">2017</h6>
                     </div>
                 </div>
+
+
             </section>
 
 
@@ -657,7 +659,10 @@
     };
 
     // The strings to morph between. You can change these to anything you want!
-    const texts = ["a creative", "a graphic designer", "a web designer", "a photographer", "a ux/ui designer", "an illustrator", "...what else?"];
+    const textsDesktop = ["a creative", "a graphic designer", "a web designer", "a photographer", "a ux/ui designer", "an illustrator", "...what else?"];
+    const textsMobile = ["a creative", "a graphic designer", "a web designer", "a content creator", "a ux/ui designer", "an illustrator", "...what else?"];
+
+    const texts = window.matchMedia('(min-width: 30em)').matches ? textsDesktop : textsMobile;
 
     // Controls the speed of morphing.
     const morphTime = 1.5;

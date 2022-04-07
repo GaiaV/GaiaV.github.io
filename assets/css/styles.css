@@ -26,7 +26,7 @@ html {
 }
 
 html, body {
-    font-family: "Playfair Display", serif;
+    font-family: 'sofia-pro', sans-serif;
 }
 
 h1 {
@@ -36,9 +36,9 @@ h1 {
 }
 
 h1 i {
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'playfair-display',serif;
+    font-weight: 400;
+    font-style: italic;    
     font-size: 6rem;
 }
 
@@ -296,6 +296,10 @@ margin-top: -39vh;
 margin-left: 75vw;
 }
 
+.gif-home-mobile {
+    display: none;
+}
+
 .asterisk-button {
     height: 3rem;
     margin-top: -12px;
@@ -377,10 +381,9 @@ margin-right: 12px;
 }
 
 .c1:hover {
-    background-image: url("/assets/img/ink-sketch-lion.JPG");
+    background-image: url("/assets/img/circles/erasmus+io-postcards.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    transform: scale(1.07);
 }
 
 
@@ -389,7 +392,7 @@ margin-right: 12px;
 }
 
 .c2:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/lays-graphic-design.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -399,7 +402,7 @@ margin-right: 12px;
 }
 
 .c3:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/branding-merchandising.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -409,7 +412,7 @@ margin-right: 12px;
 }
 
 .c4:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/brand-design-AGV.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -419,7 +422,7 @@ margin-right: 12px;
 }
 
 .c5:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/web-designer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -429,7 +432,7 @@ margin-right: 12px;
 }
 
 .c6:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/typography-filosofia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -439,7 +442,7 @@ margin-right: 12px;
 }
 
 .c7:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/magazine-illustration-covid.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -449,7 +452,7 @@ margin-right: 12px;
 }
 
 .c8:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/social-media-manager.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -459,7 +462,7 @@ margin-right: 12px;
 }
 
 .c9:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/landing-page-app.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -469,7 +472,7 @@ margin-right: 12px;
 }
 
 .c10:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/content-creation-pizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -479,7 +482,7 @@ margin-right: 12px;
 }
 
 .c11:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/photographer-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -489,7 +492,7 @@ margin-right: 12px;
 }
 
 .c12:hover {
-    background-image: url(/assets/img/ink-sketch-lion.JPG);
+    background-image: url(/assets/img/circles/illustration.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -577,7 +580,7 @@ margin-right: 12px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 1em;
     gap: 1rem;
- padding: 0 40px;
+ padding: 0 80px;
   }
 
   .photo-description  {
@@ -771,8 +774,10 @@ height: 3rem;
 
 .text-container {
     position: relative;
-    min-height: 19rem;;
+    min-height: 22rem;
 }
+
+
 
 /* Your average text styling */
 #text1,
@@ -1058,10 +1063,16 @@ body .contact-float{
    
 @media (max-width: 76.7rem) {
    
-        
+}        
         
 @media (min-width: 76.8rem) {
-   
+  
+    
+    .text-container {
+        display: inline;
+        position: unset;
+    }
+    
 
 }
 
@@ -1072,7 +1083,7 @@ body .contact-float{
 
 
 
-  @media screen and (max-width: 65rem) {
+  @media screen and (max-width: 76.7rem) {
 
 
     .nav, .header, .menu {
@@ -1095,6 +1106,11 @@ body .contact-float{
     justify-content: flex-end;
     align-items: center;
     }
+
+    .gif-home-mobile {
+        display: none;
+    }
+
     .menu-items {
       position: absolute;
       top: 60%;
@@ -1128,8 +1144,9 @@ body .contact-float{
       .asterisk-button {
         height: 3rem;
         top: 3px;
-        display: none;
+        /**** ADD FLEX **/
       }
+
     .nav-container ul li:nth-child(1) a {
       transition-delay: 0.2s;
     }
@@ -1155,7 +1172,7 @@ body .contact-float{
       transition: all 0.2s ease;
     }
     .nav-open {
-      position: fixed;
+      position: absolute;
       right: 25px;
       top: 20px;
       display: block;
@@ -1215,7 +1232,7 @@ body .contact-float{
 
 
 
-@media screen and (max-width: 376.7rem) {
+@media screen and (max-width: 48rem) {
 
   h1 {
     font-family: 'sofia-pro', sans-serif;
@@ -1224,9 +1241,9 @@ body .contact-float{
 }
 
 h1 i {
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'playfair-display',serif;
+    font-weight: 400;
+    font-style: italic;    
     font-size: 4rem;
 }
 
@@ -1288,7 +1305,10 @@ strong {
 }
 
 i {
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display',serif;
+font-weight: 400;
+font-style: italic;
+
 }
 
 .homepage {
@@ -1297,6 +1317,19 @@ i {
 
 .gif-home {
     display: none;
+}
+
+.gif-home-mobile {
+    display: block;
+    width: 80%;
+}
+
+.home-hello {
+    padding-top: 0;
+}
+
+.im-home {
+    padding-top: 0.8rem;
 }
 
 .header{
@@ -1324,6 +1357,7 @@ i {
     margin-left: 0px;
     user-select: none;
 }
+
 
 .circle-grid {
 display: grid;
@@ -1439,4 +1473,4 @@ padding-top: 60px;
 
 }
 
-}
+
