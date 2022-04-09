@@ -742,6 +742,14 @@ a:hover {
     margin-left: 5rem;
 }
 
+.project-img-2-space {
+    height: 423px;
+    z-index: 1;
+    margin-top: -30rem;
+    margin-left: 5rem;
+}
+
+
 .project-img-3 {
     height: 456px;
     z-index: 1;
@@ -836,6 +844,15 @@ a:hover {
 .description-bar-project {
     padding: 1rem 3rem;
 }
+
+
+/**********    ERASMUS+IO      *********/
+
+
+.project-text-space {
+    margin: 5% 20%;
+}
+
 
 /* ****************************** MORPH MENU *************************************** */
 
@@ -1175,6 +1192,13 @@ body .footer .content>div .image {
     min-width: 1%;
 }
 
+
+
+.iframe-figma {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
 
 /********** BACK TO TOP ********/
 
@@ -1593,6 +1617,11 @@ body .footer .content>div .image {
     }
 
 
+    .project-text-space {
+        padding: 40px 0 40px 0;
+    }
+
+
 
 
     .project-img-1 {
@@ -1607,6 +1636,13 @@ body .footer .content>div .image {
         z-index: 1;
         margin-top: -16rem;
         margin-left: 3rem;
+    }
+
+    .project-img-2-space {
+        height: 227px;
+        z-index: 1;
+        margin-top: -16.5rem;
+        margin-left: 2rem;
     }
 
     .project-img-3 {
