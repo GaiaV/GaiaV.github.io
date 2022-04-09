@@ -704,7 +704,14 @@ a:hover {
     padding-top: 120px;
 }
 
-.project-2 {
+.project-2.search {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 210px;
+    padding-bottom: 120px;
+}
+
+.project-2.space {
     display: flex;
     justify-content: flex-start;
     padding-top: 120px;
@@ -729,24 +736,25 @@ a:hover {
 
 
 .project-img-2 {
-    height: 360px;
+    height: 423px;
     z-index: 1;
-    margin-top: -26rem;
-    margin-left: 6rem;
+    margin-top: -30rem;
+    margin-left: 5rem;
 }
 
 .project-img-3 {
-    height: 400px;
+    height: 456px;
     z-index: 1;
-    margin-top: -26rem;
-    margin-left: 4rem;
+    margin-top: -31rem;
+    margin-left: 16rem;
 }
 
+
 .project-img-4 {
-    height: 320px;
+    height: 395px;
     z-index: 1;
-    margin-top: -25rem;
-    margin-left: 5rem;
+    margin-top: -29rem;
+    margin-left: 4rem;
 }
 
 .project-img-1:hover,
@@ -797,7 +805,7 @@ a:hover {
 
 .wip img {
     padding-top: 4rem;
-    height: 26rem;
+    height: 25rem;
 }
 
 
@@ -1263,13 +1271,17 @@ body .footer .content>div .image {
     }
 
     .asterisk-button {
-        display: none;
 
-        /**** ADD FLEX 
-         height: 3rem;
+        height: 3rem;
         top: 3px;
-        **/
+        /**** ADD FLEX **/
     }
+
+
+    nav .asterisk-button {
+        display: none;
+    }
+
 
     .nav-container ul li:nth-child(1) a {
         transition-delay: 0.2s;
@@ -1461,6 +1473,11 @@ body .footer .content>div .image {
         padding-bottom: 40px;
     }
 
+    .wip img {
+        padding-top: 4rem;
+        height: 16rem;
+    }
+
     .home-hello {
         padding-top: 0;
     }
@@ -1550,10 +1567,31 @@ body .footer .content>div .image {
 
     }
 
-    .project-list-2 {
-        padding-bottom: 75px;
-        padding-left: 0;
+    .project-list-2.last {
+        padding: 80px 0 75px 0;
+
     }
+
+    .project-list-2 {
+        padding: 0 0 75px 0;
+
+    }
+
+
+    .project-2.search {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+
+    .project-2.space {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+
 
 
 
@@ -1567,15 +1605,15 @@ body .footer .content>div .image {
     .project-img-2 {
         height: 227px;
         z-index: 1;
-        margin-top: -17rem;
-        margin-left: 1rem;
+        margin-top: -16rem;
+        margin-left: 3rem;
     }
 
     .project-img-3 {
-        height: 306px;
+        height: 285px;
         z-index: 1;
-        margin-top: -21rem;
-        margin-left: 4rem;
+        margin-top: -20rem;
+        margin-left: 8rem;
     }
 
     .project-img-4 {
