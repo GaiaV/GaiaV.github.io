@@ -844,7 +844,7 @@ a:hover {
 
 .text-container {
     position: relative;
-    min-height: 22rem;
+    min-height: 8rem;
 }
 
 
@@ -884,6 +884,10 @@ a:hover {
 .you-me {
     display: flex;
     justify-content: space-between;
+}
+
+.you-me-mobile {
+    display: none;
 }
 
 .contacts-you-me {
@@ -1259,9 +1263,12 @@ body .footer .content>div .image {
     }
 
     .asterisk-button {
-        height: 3rem;
+        display: none;
+
+        /**** ADD FLEX 
+         height: 3rem;
         top: 3px;
-        /**** ADD FLEX **/
+        **/
     }
 
     .nav-container ul li:nth-child(1) a {
@@ -1371,7 +1378,7 @@ body .footer .content>div .image {
 
     h1 {
         font-family: 'sofia-pro', sans-serif;
-        font-size: 4rem;
+        font-size: 3.8rem;
         line-height: 1;
     }
 
@@ -1379,7 +1386,7 @@ body .footer .content>div .image {
         font-family: 'playfair-display', serif;
         font-weight: 400;
         font-style: italic;
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
 
@@ -1441,7 +1448,7 @@ body .footer .content>div .image {
     }
 
     .homepage {
-        padding-top: 10rem;
+        padding-top: 4rem;
     }
 
     .gif-home {
@@ -1451,6 +1458,7 @@ body .footer .content>div .image {
     .gif-home-mobile {
         display: block;
         width: 80%;
+        padding-bottom: 40px;
     }
 
     .home-hello {
@@ -1481,8 +1489,8 @@ body .footer .content>div .image {
         position: absolute;
         width: 100%;
         display: inline-block;
-        font-family: sofia-pro, sans-serif;
-        font-size: 4.1rem;
+        font-family: 'sofia-pro', sans-serif;
+        font-size: 3.8rem;
         margin-left: 0px;
         user-select: none;
     }
@@ -1503,8 +1511,8 @@ body .footer .content>div .image {
         background-position: 50%;
         background-size: cover;
         border-radius: 50%;
-        height: 18vh;
-        width: 18vh;
+        height: 20vh;
+        width: 20vh;
         margin: 0 auto;
         margin-top: 0.8rem;
         transition: 0.2s ease;
@@ -1515,6 +1523,11 @@ body .footer .content>div .image {
         display: flex;
         justify-content: center;
     }
+
+    .circle-text {
+        font-size: 1rem;
+    }
+
 
 
 
@@ -1566,14 +1579,26 @@ body .footer .content>div .image {
     }
 
     .project-img-4 {
-        height: 226px;
+        height: 241px;
         z-index: 1;
-        margin-top: -18rem;
-        margin-left: -2rem;
+        margin-top: -17rem;
+        margin-left: 0rem;
     }
 
-    .talk-art {
+    #art-wall {
+        margin-top: 10px;
+    }
+
+    .talk-art.t1 {
+        padding: 60px 40px 55px 40px;
+    }
+
+    .talk-art.t2 {
         padding: 35px 40px 85px 40px;
+    }
+
+    .art-p {
+        padding-bottom: 15px;
     }
 
     .photo-grid {
@@ -1602,13 +1627,21 @@ body .footer .content>div .image {
     }
 
     .text-title-portfolio {
-        padding-bottom: 0;
+        padding-bottom: 10px;
         padding-top: 10px;
     }
 
 
     .i-together {
-        line-height: 200%;
+        line-height: 150%;
+    }
+
+    .you-me {
+        display: none;
+    }
+
+    .you-me-mobile {
+        display: block;
     }
 
     body .footer .content {
