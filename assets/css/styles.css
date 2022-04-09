@@ -1645,7 +1645,7 @@ body .footer .content>div .image {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 1em;
         gap: 1rem;
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .photo-pic-text {
@@ -1671,7 +1671,7 @@ body .footer .content>div .image {
 
 
     .i-together {
-        line-height: 150%;
+        line-height: 130%;
     }
 
     .you-me {
