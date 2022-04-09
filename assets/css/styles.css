@@ -76,7 +76,7 @@ h5 {
 }
 
 h6 {
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display', serif;
     font-size: 1.7rem;
     line-height: 1.1;
     font-weight: 500;
@@ -99,13 +99,13 @@ strong {
 }
 
 i {
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display', serif;
     font-style: italic;
 }
 
 a {
     color: var(--primary-500);
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display', serif;
     font-weight: 300;
 
 }
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .font-secondary {
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display', serif;
 }
 
 
@@ -672,7 +672,7 @@ a:hover {
 
 
 .photo-pic-year {
-    font-family: "Playfair Display", serif;
+    font-family: 'playfair-display', serif;
     font-size: 1.2rem;
     line-height: 1.1;
     font-weight: 500;
@@ -1412,7 +1412,7 @@ body .footer .content>div .image {
     }
 
     h6 {
-        font-family: "Playfair Display", serif;
+        font-family: 'playfair-display', serif;
         font-size: 1.5rem;
         line-height: 1.1;
         font-weight: 500;
