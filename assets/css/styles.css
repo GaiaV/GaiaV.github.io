@@ -854,6 +854,8 @@ a:hover {
     margin: 5% 20%;
 }
 
+
+
 /**********    ABOUT      *********/
 
 .arrow-about {
@@ -1320,7 +1322,7 @@ body .footer .content>div .image {
 
 
 
-@media (max-width: 76.81rem) {
+@media (max-width: 76.77rem) {
 
 
     .nav,
@@ -1500,6 +1502,8 @@ body .footer .content>div .image {
 
 
 
+
+
 @media screen and (max-width: 48rem) {
 
     h1 {
@@ -1567,7 +1571,7 @@ body .footer .content>div .image {
     }
 
     i {
-        font-family: 'playfair-display', serif;
+        font-family: "playfair-display", serif;
         font-weight: 400;
         font-style: italic;
 
@@ -1713,7 +1717,6 @@ body .footer .content>div .image {
 
 
 
-
     .project-img-1 {
         height: 400px;
         z-index: 1;
@@ -1835,6 +1838,10 @@ body .footer .content>div .image {
     }
 
 }
+
+/**********    SPACE TRAVEL     *********/
+
+
 
 
 /**********    ABOUT      *********/
