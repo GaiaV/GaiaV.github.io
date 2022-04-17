@@ -45,3 +45,10 @@ $(window).scroll(function () {
     var progress = 100 * pixels / pageHeight;
     $("div.progress").css("width", progress + "%");
 })
+
+
+let mouse = new Mouse({
+    mouse: 'point',
+    color: '#ffda79',
+    mouseHover: 'border',
+})
