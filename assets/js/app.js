@@ -46,9 +46,3 @@ $(window).scroll(function () {
     $("div.progress").css("width", progress + "%");
 })
 
-
-let mouse = new Mouse({
-    mouse: 'point',
-    color: '#ffda79',
-    mouseHover: 'border',
-})
