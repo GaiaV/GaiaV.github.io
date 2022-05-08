@@ -616,8 +616,13 @@ a:hover {
 }
 
 
+
 .pic5 {
     background-image: url(/assets/img/art-wall/25-artwall-artwall.jpg);
+}
+
+.pic5:hover {
+    background-image: url(/assets/img/art-wall/24-artwall-artwall.jpg);
 }
 
 
@@ -647,6 +652,10 @@ a:hover {
 
 .pic10 {
     background-image: url(/assets/img/art-wall/27-artwall-artwall.jpg);
+}
+
+.pic10:hover {
+    background-image: url(/assets/img/art-wall/29-artwall-artwall.jpg);
 }
 
 .pic11 {
