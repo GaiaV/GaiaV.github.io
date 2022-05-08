@@ -1787,6 +1787,13 @@ body .footer .content>div .image {
         margin-left: 7rem;
     }
 
+    .project-img-1-mood {
+        height: 284px;
+        z-index: 1;
+        margin-top: -19rem;
+        margin-left: 9rem;
+    }
+
     .project-img-2 {
         height: 227px;
         z-index: 1;
