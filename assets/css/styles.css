@@ -247,6 +247,10 @@ a:hover {
     transform: scale(1.2);
 }
 
+.logofooter:hover {
+    transform: scale(1.2);
+}
+
 .menu_items a::before {
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -340,10 +344,10 @@ a:hover {
 }
 
 .arrow-title {
-    transform: rotate(53.19deg);
+    transform: rotate(130deg);
     height: 40px;
-    margin-top: 12px;
-    margin-right: 12px;
+    margin-top: 10px;
+    margin-right: 15px;
 }
 
 
