@@ -717,10 +717,17 @@ a:hover {
     padding-top: 120px;
 }
 
+.project-mood {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 110px;
+}
+
 .project-2.search {
     display: flex;
     justify-content: flex-start;
-    padding-top: 210px;
+    padding-top: 150px;
     padding-bottom: 120px;
 }
 
@@ -771,6 +778,16 @@ a:hover {
 }
 
 
+.project-img-2-soa {
+    height: 413px;
+    z-index: 1;
+    margin-top: -29rem;
+    margin-left: 0.5rem;
+}
+
+
+
+
 .project-img-3 {
     height: 456px;
     z-index: 1;
@@ -783,7 +800,7 @@ a:hover {
     height: 395px;
     z-index: 1;
     margin-top: -29rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 
 .project-img-1:hover,
@@ -791,6 +808,7 @@ a:hover {
 .project-img-3:hover,
 .project-img-4:hover,
 .project-img-2-space:hover,
+.project-img-2-soa:hover,
 .project-img-1-mood:hover {
     transform: scale(1.05);
 }
@@ -1798,12 +1816,13 @@ body .footer .content>div .image {
         margin-left: 9rem;
     }
 
-    .project-img-2 {
-        height: 227px;
+    .project-img-2-soa {
+        height: 214px;
         z-index: 1;
-        margin-top: -16rem;
-        margin-left: 3rem;
+        margin-top: -15.5rem;
+        margin-left: 1rem;
     }
+
 
     .project-img-2-space {
         height: 227px;
