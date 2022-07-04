@@ -770,6 +770,13 @@ a:hover {
     margin-left: 5rem;
 }
 
+.project-img-2-space-home {
+    height: 423px;
+    z-index: 1;
+    margin-top: -30rem;
+    margin-left: 5rem;
+}
+
 .project-img-2-space {
     height: 423px;
     z-index: 1;
@@ -808,6 +815,7 @@ a:hover {
 .project-img-3:hover,
 .project-img-4:hover,
 .project-img-2-space:hover,
+.project-img-2-space-home:hover,
 .project-img-2-soa:hover,
 .project-img-1-mood:hover {
     transform: scale(1.05);
@@ -1830,6 +1838,14 @@ body .footer .content>div .image {
         margin-top: -16.5rem;
         margin-left: 2rem;
     }
+
+    .project-img-2-space-home {
+        height: 219px;
+        z-index: 1;
+        margin-top: -15.5rem;
+        margin-left: 5rem;
+    }
+
 
     .project-img-3 {
         height: 285px;
