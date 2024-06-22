@@ -121,8 +121,8 @@
                     alt="">
 
                 <div class="home-description">
-                   <h4>I'm passionate about finding <i>creative and innovative solutions to complex problems</i> by
-                        carefully crafting new ideas, concepts, and digital experiences. Always with a <i>human- and environmental-centered perspective</i> in mind, I strive to ensure a responsible and sustainable approach in every project.
+                   <h4>I'm passionate about finding <i>creative and innovative solutions to complex problems</i><br> by
+                        carefully crafting new ideas, concepts, and digital experiences.<br>Always with a <i>human- and environmental-centered perspective</i> in mind, I strive to ensure a responsible and sustainable approach in every project.
                     </h4>
                 </div>
                 <div class="home-meet">
@@ -557,7 +557,7 @@
 
     <!--
     <div class=" typing-demo">
-                <p><i>a</i> graphic <i>and</i> web designer</p>
+                <p><i>a</i> UX/UI<i>and</i> web designer</p>
                 </div>
                 -->
 
@@ -635,13 +635,13 @@
                     <div class="content-footer-text">
                         <span style="margin-top: 15px;" class="footer-row">
                             <img class="asterisk-button" src="./assets/img/asterisk-gif-6.gif" alt="">
-                            <h5>Digital Graphic & Web Designer</h5>
+                            <h5>UX/UI & Web Designer</h5>
                         </span>
                     </div>
                     <div class="content-footer-text">
                         <span class="footer-row">
                             <img class="asterisk-button" src="./assets/img/asterisk-gif-6.gif" alt="">
-                            <h5>From Florence to Barcelona</h5>
+                            <h5>Based in Florence, Italy</h5>
                         </span>
                     </div>
                 </div>
@@ -649,7 +649,7 @@
                     justify-content: center;" href="/"><img style="width: 80px;" class="logofooter transition"
                             src="./assets/img/AGV Logo.png" alt="">
                     </a>
-                    <p style="text-align: center;"><b>AGV ©2022 <br> All rights reserved. <br> Coded with 🤍 by me</b>
+                    <p style="text-align: center;"><b>AGV ©<span id="year"></span> <br> All rights reserved. <br> Coded with 🤍 by me</b>
                     </p>
                 </div>
             </div>
@@ -676,7 +676,12 @@
 
     <div id="back_to_top"><img src="/assets/img/back-to-top.png" alt=""></div>
 
-
+<script>
+  const yearSpan = document.getElementById("year");
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
+</script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -695,8 +700,8 @@
         };
 
         // The strings to morph between. You can change these to anything you want!
-        const textsDesktop = ["a creative", "a graphic designer", "a web designer", "a content creator", "a ux/ui designer", "an illustrator", "...what else?"];
-        const textsMobile = ["a creative", "a graphic designer", "a web designer", "a content creator", "a ux/ui designer", "an illustrator", "...what else?"];
+        const textsDesktop = ["a creative", "a ux designer", "a web designer", "a ui designer", "digital designer", "...what else?"];
+        const textsMobile = ["a creative", "a ux designer", "a web designer", "a ui designer", "digital designer", "...what else?"];
 
         const texts = window.matchMedia('(min-width: 30rem)').matches ? textsDesktop : textsMobile;
 
