@@ -1757,7 +1757,7 @@ body .footer .content>div .image {
     }
     
   div.circles.c12 {
-        visibility: hide;
+        visibility: hidden;
     }
 
     .left-bck {
