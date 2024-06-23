@@ -1755,7 +1755,10 @@ body .footer .content>div .image {
     .circle-text {
         font-size: 1rem;
     }
-
+    
+  .circles c12 {
+        visibility: hide;
+    }
 
     .left-bck {
         padding-left: 20px;
