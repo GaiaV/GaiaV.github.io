@@ -1758,6 +1758,7 @@ body .footer .content>div .image {
     
   div.circles.c12 {
         visibility: hidden;
+      margin-bottom: -200px;
     }
 
     .left-bck {
