@@ -483,7 +483,7 @@ a:hover {
 }
 
 .c11:hover {
-    background-image: url(/assets/img/circles/photographer-2.jpg);
+    background-image: url(/assets/img/circles/content-creation-pizza.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -493,7 +493,7 @@ a:hover {
 }
 
 .c12:hover {
-    background-image: url(/assets/img/circles/illustration.jpg);
+    background-image: url(/assets/img/circles/ink-sketch-firenze.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2004,6 +2004,10 @@ body .footer .content>div .image {
     #text1,
     #text2 {
         margin-left: 0px;
+    }
+
+    .circles c12 {
+        visibility: hide;
     }
 
 }
