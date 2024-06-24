@@ -358,8 +358,7 @@
                     justify-content: center;" href="/"><img style="width: 80px;" class="logofooter transition"
                             src="/assets/img/AGV Logo.png" alt="">
                     </a>
-                    <p style="text-align: center;"><b>AGV ©2022 <br> All rights reserved.<br> Coded with 🤍 by me</b>
-                    </p>
+                    <p style="text-align: center;"><b>AGV ©<span id="year"></span><br>All rights reserved.<br>Coded with 🤍 by me</b></p>
                 </div>
             </div>
         </div>
@@ -384,7 +383,12 @@
 
     <div id="back_to_top"><img src="/assets/img/back-to-top.png" alt=""></div>
 
-
+<script>
+  const yearSpan = document.getElementById("year");
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
+</script>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
